@@ -56,7 +56,7 @@ header img {
     top: 0;
     left: 0;
     background-color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.966);
   }
   
   .overlay-content {
@@ -110,12 +110,18 @@ hr {
 }
 
   #links {
+      padding: 10%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     flex-direction: row;
-    width: 30%;
+    width: 80%;
     justify-content: space-around;
+    
+  }
+
+  #links img {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 
   #links img:hover {
@@ -258,10 +264,6 @@ input[type=text], select, textarea {
             font-size: 1rem;
             line-height: 2rem;
         }
-
-        #links {
-            visibility: hidden;
-          }
 
           .button {
               padding: 1vh;
