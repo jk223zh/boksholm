@@ -19,8 +19,8 @@ body {
     grid-template-columns: auto;
     grid-template-areas:
     "nav"
-    "header    header   header  header"
-    "main       main     main   main"
+    "header"
+    "main"
     ;
   }
 
@@ -41,6 +41,7 @@ body {
 header img {
     margin-top: 10vh;
     display: block;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -129,7 +130,7 @@ hr {
     color: #ffffff;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 50%;
     font-variant: normal;
     font-size: 1vw;
     line-height: 2vw;
@@ -245,11 +246,31 @@ input[type=text], select, textarea {
         .col-25, .col-75, input[type=submit] {
           width: 100%;
         }
+
+        header img {
+            width: 80%;
+        }
       
         #omoss .wrapper {
             width: 80%;
-            font-size: 1.5rem;
+            font-size: 1rem;
             line-height: 2rem;
         }
+
+        #links {
+            padding-top: 20%;
+            flex-direction: column;
+            margin: 0 auto;
+            gap: 10%;
+            
+          }
+
+          #links img{
+              width: 100%;
+          }
+        
+          #links img:hover {
+            transform: scale(1.2);
+          }
     
       }
