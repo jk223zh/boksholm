@@ -1,7 +1,9 @@
 @import url("https://use.typekit.net/lre8son.css");
 
-html{
+html, body{
     gap: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -37,7 +39,7 @@ body {
     text-align: center;
 }
 
-header {
+header#index {
     height: 100vh;
     background-image: url(/img/doncamillo.jpg);
     background-repeat: no-repeat;
@@ -51,6 +53,8 @@ header img {
     margin-left: auto;
     margin-right: auto;
 }
+
+
 
   /* ----------- OVERLAY NAV ------------ */
   .overlay {
@@ -137,10 +141,21 @@ hr {margin-bottom: 10%;
     font-size: 1vw;
     line-height: 2vw;}
 
+
+/**** BOKNING ***********/
+
+header#boka {
+    padding-top: 10vh;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/img/omossram-8.png);
+}
+
     #bokning {color: #ffffff;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 30%;
     font-variant: normal;
     font-size: 1vw;
     line-height: 2vw;}
@@ -148,7 +163,7 @@ hr {margin-bottom: 10%;
 /******* FORMULÄR ********************/
   #form {padding-top: 5%;
     font-size: 1vw;
-    width: 80%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;}
 
@@ -162,6 +177,7 @@ input[type=text], select, textarea {width: 80%;
     display: inline-block;}
   
   input[type=submit] {background-color: #04AA6D;
+    width: 300px;
     color: white;
     margin-top: 5%;
     padding: 12px 20px;
@@ -232,9 +248,10 @@ input[type=text], select, textarea {width: 80%;
             width:100%;
             font-size: 1.2rem;}
 
-        header {
-            height: 50vh;
-        }
+        header#index {
+                height: 40vh;
+                background-size: contain;
+            }
 
         header img {margin-top: 10%;
             width: 80%;}
