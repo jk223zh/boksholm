@@ -248,6 +248,7 @@ input[type=text], select, textarea {
         }
 
         header img {
+            margin-top: 0%;
             width: 80%;
         }
       
@@ -258,18 +259,15 @@ input[type=text], select, textarea {
         }
 
         #links {
-            padding-top: 20%;
-            flex-direction: column;
-            margin: 0 auto;
-            gap: 20%;
+            visibility: hidden;
           }
 
-          #links img{
-              width: 100%;
-          }
-        
-          #links img:hover {
-            transform: scale(1.2);
+          .button {
+            background-color: #52d76d;
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 5%;
           }
     
       }
