@@ -9,7 +9,6 @@ body {
     color: #ffffff;
     display: grid;
     font-family: 'Courier New', Courier, monospace; 
-    font-variant: small-caps;
 
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -36,6 +35,13 @@ body {
 
 .center {
     text-align: center;
+}
+
+header {
+    height: 100vh;
+    background-image: url(/img/doncamillo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header img {
@@ -103,90 +109,71 @@ header img {
 /***********************************************/
 
 /******************************************/
-hr {
-    margin-bottom: 10%;
+hr {margin-bottom: 10%;
     margin-top: 8%;
-    color: #ffffff;
-}
+    color: #ffffff;}
 
-  #links {
-    padding: 10%;
-    display: flex;
+  #links {display: flex;
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     flex-direction: row;
-    width: 80%;
-    justify-content: space-around;
-    
-  }
+    width: 60%;
+    justify-content: space-around;}
 
-  #links img {
-    -webkit-filter: drop-shadow(2px 2px 2px #222);
+  #links img {-webkit-filter: drop-shadow(2px 2px 2px #222);
   filter: drop-shadow(2px 2px 2px #222);
-  }
+  width: 100px;}
 
-  #links img:hover {
-    transform: scale(1.2);
-  }
+  #links img:hover {transform: scale(1.2);}
 
-  #omoss {
-      margin-top: 5%;
-  }
+  #omoss {margin-top: 5%;}
 
-  #omoss .wrapper {
-    color: #ffffff;
+  #omoss .wrapper {color: #ffffff;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     font-variant: normal;
     font-size: 1vw;
-    line-height: 2vw;
-  }
+    line-height: 2vw;}
 
-
-/******* FORMULÄR ********************/
-  #form {
-    padding-top: 5%;
-    width: 80%;
+    #bokning {color: #ffffff;
     margin-left: auto;
     margin-right: auto;
-}
+    width: 50%;
+    font-variant: normal;
+    font-size: 1vw;
+    line-height: 2vw;}
 
-input[type=text], select, textarea {
+/******* FORMULÄR ********************/
+  #form {padding-top: 5%;
+    font-size: 1vw;
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+input[type=text], select, textarea {width: 80%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    resize: vertical;
-  }
+    resize: vertical;}
   
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
+  label {padding: 12px 12px 12px 0;
+    display: inline-block;}
   
-  input[type=submit] {
-    background-color: #04AA6D;
-    width: 10%;
+  input[type=submit] {background-color: #04AA6D;
     color: white;
     margin-top: 5%;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float:right;
-  }
+    float:right;}
   
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
+  input[type=submit]:hover {background-color: #45a049;}
   
-  .container {
-    border-radius: 5px;
-    background-color: #000000;
-    padding: 40px;
-  }
+  .container {border-radius: 5px;
+    padding: 40px;}
   
   .col-25 {
     float: left;
@@ -194,24 +181,16 @@ input[type=text], select, textarea {
     margin-top: 6px;
   }
   
-  .col-75 {
-    float: left;
+  .col-75 {float: left;
     width: 85%;
-    margin-top: 6px;
-  }
+    margin-top: 6px;}
   
   /* Clear floats after the columns */
-  .row:after {
-    content: "";
+  .row:after {content: "";
     display: table;
-    clear: both;
-  }
+    clear: both;}
   
-
-
-
-  .button {
-    font-family: 'Courier New', Courier, monospace; 
+  .button {font-family: 'Courier New', Courier, monospace; 
     font-variant: small-caps;
     border-radius: 4px;
     background-color: #f4501e00;
@@ -220,62 +199,63 @@ input[type=text], select, textarea {
     text-align: center;
     font-size: 1vw;
     transition: all 0.5s;
-    cursor: pointer;
-  }
+    cursor: pointer;}
   
-  .button span {
-    cursor: pointer;
+  .button span {cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
-  }
+    transition: 0.5s;}
   
-  .button span:after {
-    content: '\00bb';
+  .button span:after {content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.5s;
-  }
+    transition: 0.5s;}
   
-  .button:hover span {
-    padding-right: 25px;
-  }
+  .button:hover span {padding-right: 25px;}
   
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
+  .button:hover span:after {opacity: 1;
+    right: 0;}
 
 
 
     /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
-        .col-25, .col-75, input[type=submit] {
-          width: 100%;
+        .col-25, .col-75 {width: 100%;}
+
+        input[type=submit] {width: 90%;
+        float: left;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+
+        #form {padding-top: 1%;
+            width:100%;
+            font-size: 1.2rem;}
+
+        header {
+            height: 50vh;
         }
 
-        header img {
-            margin-top: 0%;
-            width: 80%;
-        }
+        header img {margin-top: 10%;
+            width: 80%;}
       
-        #omoss .wrapper {
-            width: 80%;
+        #omoss .wrapper, #bokning {width: 80%;
             font-size: 1rem;
-            line-height: 2rem;
-        }
+            line-height: 2rem;}
 
-          .button {
-              padding: 1vh;
+        #links { padding: 10%;
+        margin-top: 10%;
+        width: 80%;}
+
+        #links img {width: 70px;}
+
+          .button {padding: 1vh;
               margin:1vh;
-              width: 90%;
+              width: 80%;
               font-size: 2rem;
               color: #ffffff;
               border: #ffffff;
               border-style: groove;
-              background-color: #000000;
-          }
-    
-      }
+              background-color: #000000;}
+    }
+
