@@ -138,7 +138,7 @@ hr {margin-bottom: 10%;
 
   #links img:hover {transform: scale(1.2);}
 
-  #omoss {margin-top: 5%;}
+  #omoss {margin-top: 10%;}
 
   #omoss .wrapper {color: #ffffff;
     margin-left: auto;
@@ -267,12 +267,12 @@ input[type=text], select, textarea {width: 80%;
         #links img {width: 70px;}
 
           .button {padding: 1vh;
-              margin:1vh;
-              width: 80%;
-              font-size: 2rem;
-              color: #ffffff;
-              border: #ffffff;
+            margin-bottom: 3%;
+              width: 100%;
+              font-size: 1.5rem;
+              color: #000000;
+              border: #000000;
               border-style: groove;
-              background-color: #000000;}
+              background-color: #ffffff;}
     }
 
