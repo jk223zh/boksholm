@@ -13,7 +13,6 @@
 <body>
 
 <nav>
-
     <div id="myNav" class="overlay">
 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -34,78 +33,44 @@
 </nav>
 
 <header id="boka">
-  
     <h1 class="center">Här kan du boka Böksholm!</h1>
-
-    <section id="bokning">
-      <p>Genom att fylla i forumeläret kan du skicka en bokningsförfrågan till Böksholm. Ange vilken typ av sammanhang bokningen avser, datum och tid, plats och andra detaljer som är relevant för bokningen. Formuläret går även att använda för övrig kontakt med bandet. </p>
-      <p>Eller varför inte slå en signal? 070 000 00 00</p>
-    </section>
-
 </header>
 
 <main>
-
-
-
-    
-<section id="form">
-        
-        <div class="container">
-            <form action="/action_page.php">
-              <div class="row">
-                <div class="col-25">
-                  <label for="fnamn">Förnamn</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="fnamn" name="fnamn" placeholder="Ditt namn...">
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-25">
-                  <label for="enamn">Efternamn</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="enamn" name="enamn" placeholder="Ditt efternamn...">
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-25">
-                  <label for="lname">Mailadress</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="email" name="email" placeholder="Mailadress">
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-25">
-                  <label for="arende">Ärende</label>
-                </div>
-                <div class="col-75">
-                  <select id="arende" name="arende">
-                    <option value="Bokningsförfrågan">Bokningsförfrågan</option>
-                    <option value="Övrigt">Övrigt</option>
-                  </select>
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-25">
-                  <label for="meddelande">Meddelande</label>
-                </div>
-                <div class="col-75">
-                  <textarea id="meddelande" name="meddelande" placeholder="Meddelande..." style="height:200px"></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <input type="submit" value="Skicka">
-              </div>
-            </form>
-          </div>
-</section>
+  <form id="bokning">
+    <p>Genom att fylla i forumeläret kan du skicka en bokningsförfrågan till Böksholm. Ange vilken typ av sammanhang bokningen avser, datum och tid, plats och andra detaljer som är relevant för bokningen. Formuläret går även att använda för övrig kontakt med bandet. </p>
+      <p>Eller varför inte slå en signal? 070 000 00 00</p>
+    <fieldset id="Forfragan">
+        <legend>Ärende</legend>
+        <div>
+            <select name="forfragan" id="forfragan">
+                <option value="booking">Bokning</option>
+                <option value="question">Frågor</option>
+                <option value="other"> Övrigt</option>
+            </select>
+        </div>
+    </fieldset>
+    <fieldset id="Textmeddelande">
+        <legend>Meddelande</legend>
+        <div>
+            <textarea name="message" id="message" cols="50" rows="10" required></textarea>
+        </div>
+    </fieldset>
+    <fieldset id="Contact">
+        <legend>Kontaktuppgifter</legend>
+        <div>
+            <label for="name">Ditt namn</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">E-post</label>
+            <input type="text" name="email" id="email" required>
+            <label for="phonenumber">Telefonnummer</label>
+            <input type="text" name="phonenumber" id="phonenumber">
+        </div>
+    </fieldset>
+    <div id="skicka">
+        <input type="submit" value="Skicka förfrågan">
+    </div>
+</form>
 </main>
 
 

@@ -57,6 +57,13 @@ header img {
 
 
   /* ----------- OVERLAY NAV ------------ */
+
+  nav {
+      padding: 10px;
+      border-bottom-style: solid;
+      border-width: thin;
+  }
+
   .overlay {
     height: 100%;
     width: 100%;
@@ -146,10 +153,7 @@ hr {margin-bottom: 10%;
 
 header#boka {
     padding-top: 10vh;
-    height: 80vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(/img/omossram-8.png);
+    height: 10vh;
 }
 
     #bokning {color: #ffffff;
@@ -237,14 +241,9 @@ input[type=text], select, textarea {width: 80%;
 
 
     /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-        .col-25, .col-75 {width: 100%;}
+    @media screen and (max-width: 800px) {
 
-        input[type=submit] {width: 90%;
-        float: left;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
-
-        #form {padding-top: 1%;
+        #bokning {padding-top: 1%;
             width:100%;
             font-size: 1.2rem;}
 
@@ -252,6 +251,10 @@ input[type=text], select, textarea {width: 80%;
                 height: 40vh;
                 background-size: contain;
             }
+
+        header#boka  {
+            height: 10vh;
+        }
 
         header img {margin-top: 10%;
             width: 80%;}
@@ -262,7 +265,8 @@ input[type=text], select, textarea {width: 80%;
 
         #links { padding: 10%;
         margin-top: 10%;
-        width: 80%;}
+        width: 80%;
+    align-items: center;}
 
         #links img {width: 70px;}
 
