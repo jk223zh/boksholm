@@ -250,7 +250,7 @@ input[type=text], select, textarea {width: 80%;
 
         header#index {
                 height: 40vh;
-                background-size: contain;
+                background-image: none;
             }
 
         header#boka  {
