@@ -269,5 +269,9 @@ input[type=text], select, textarea {
             font-weight: 700;
             padding: 5%;
           }
+
+          .button span, .button span:after, .button:hover span, .button:hover span:after {
+              visibility: hidden;
+          }
     
       }
