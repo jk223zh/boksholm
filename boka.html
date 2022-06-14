@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="/img/1x/SVG/logga.svg">
+<link rel="stylesheet" href="https://use.typekit.net/lre8son.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+<nav>
+
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+        <a href="index.html"><img src="/img/loggavit.png" width="100px"  alt=""></a>
+          <a href="om.html">Om oss</a>
+          <a href="boka.html">Boka</a>
+          <a href="skivor.html">Butik</a>
+          <a href="https://www.youtube.com/user/boksholm" target="_blank"><img src="/img/1x/SVG/youtube.svg" width="100px" alt=""></a>
+          <a href="https://open.spotify.com/artist/73Q4YHnHP8OFwqLQYqk94R?si=7NfhrBDZRsGqfU6JtasmxA" target="_blank"><img src="/img/1x/SVG/spotify.svg" width="100px" alt=""></a>
+          <a href="https://www.facebook.com/boksholmband" target="_blank"><img src="/img/1x/SVG/facebook.svg" width="100px"  alt=""></a>
+        </div>
+        
+    </div>
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776; Meny </span>
+</nav>
+
+<header>
+    <h1 class="center">Här kan du boka Böksholm!</h1>
+</header>
+
+<main>
+    
+    <section id="form">
+        
+        <div class="container">
+            <h1>Boka oss!</h1>
+            <form action="/action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fnamn">Förnamn</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fnamn" name="fnamn" placeholder="Ditt namn...">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="enamn">Efternamn</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="enamn" name="enamn" placeholder="Ditt efternamn...">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Mailadress</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="email" name="email" placeholder="Mailadress">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="arende">Ärende</label>
+                </div>
+                <div class="col-75">
+                  <select id="arende" name="arende">
+                    <option value="Bokningsförfrågan">Bokningsförfrågan</option>
+                    <option value="Övrigt">Övrigt</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="meddelande">Meddelande</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="meddelande" name="meddelande" placeholder="Meddelande..." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Skicka">
+              </div>
+            </form>
+          </div>
+    </section>
+</main>
+
+
+<footer>
+</footer>
+     
+</body>
+</html>
