@@ -58,6 +58,11 @@ header img {
 
   /* ----------- OVERLAY NAV ------------ */
 
+  .loggasvart {
+    filter: invert(100%);
+  }
+
+
   nav {
       padding: 10px;
       border-bottom-style: solid;
@@ -73,7 +78,7 @@ header img {
     top: 0;
     left: 0;
     background-color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.966);
+    background-color: rgba(255, 255, 255, 0.993);
   }
   
   .overlay-content {
@@ -276,3 +281,16 @@ input[type=text], select, textarea {width: 80%;
               background-color: #ffffff;}
     }
 
+
+footer {
+    border-top-style: solid;
+      border-width: thin;
+    margin-top: 20%;
+    padding: 5%;
+}
+
+.footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
