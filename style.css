@@ -127,9 +127,6 @@ hr {
 
   #omoss .wrapper {
     color: #ffffff;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
@@ -137,6 +134,7 @@ hr {
     font-size: 1vw;
     line-height: 2vw;
   }
+
 
 /******* FORMULÄR ********************/
   #form {
@@ -200,13 +198,7 @@ input[type=text], select, textarea {
     clear: both;
   }
   
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-    }
 
-  }
 
 
   .button {
@@ -246,3 +238,18 @@ input[type=text], select, textarea {
     opacity: 1;
     right: 0;
   }
+
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+          width: 100%;
+        }
+      
+        #omoss .wrapper {
+            width: 80%;
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    
+      }
