@@ -40,10 +40,11 @@ body {
 }
 
 header#index {
-    height: 100vh;
+    height: 90vh;
     background-image: url(/img/doncamillo.jpg);
+    background-size: 70%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: bottom;
 }
 
 header img {
@@ -64,10 +65,15 @@ header img {
 
 
   nav {
-      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      align-items: center;
+      padding: 20px;
       border-bottom-style: solid;
       border-width: thin;
   }
+
 
   .overlay {
     height: 100%;
@@ -148,7 +154,7 @@ hr {margin-bottom: 10%;
   #omoss .wrapper {color: #ffffff;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
     font-variant: normal;
     font-size: 1vw;
     line-height: 2vw;}
@@ -214,13 +220,17 @@ input[type=text], select, textarea {width: 80%;
   .button {font-family: 'Courier New', Courier, monospace; 
     font-variant: small-caps;
     border-radius: 4px;
-    background-color: #f4501e00;
-    border: none;
-    color: #ffdd00;
     text-align: center;
-    font-size: 1vw;
     transition: all 0.5s;
-    cursor: pointer;}
+    cursor: pointer;
+    padding: 1vh;
+    margin-bottom: 3%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #000000;
+    border: #000000;
+    border-style: groove;
+    background-color: #ffffff;}
   
   .button span {cursor: pointer;
     display: inline-block;
@@ -247,6 +257,7 @@ input[type=text], select, textarea {width: 80%;
     }
 
 
+
     /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 800px) {
 
@@ -255,8 +266,9 @@ input[type=text], select, textarea {width: 80%;
             font-size: 1.2rem;}
 
         header#index {
-                height: 40vh;
-                background-image: none;
+                height: 30vh;
+                background-size: cover;
+                background-position: center;
             }
 
         header#boka  {
