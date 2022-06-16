@@ -272,7 +272,7 @@ input[type=text], select, textarea {width: 80%;
             }
 
         header#boka  {
-            height: 15vh;
+            padding: 5%;
         }
 
         header img {margin-top: 10%;
